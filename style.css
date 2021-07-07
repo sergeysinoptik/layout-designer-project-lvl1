@@ -33,11 +33,21 @@ h1 {
 
 h2 {
     font-size: 60px;
+    line-height: 72px;
 }
 
 h3 {
     font-size: 34px;
     padding-bottom: 16px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0 5px 10px;
 }
 
 .text-align-center {
@@ -213,4 +223,60 @@ body {
     font-size: 64px;
     font-family: 'Neucha', cursive;
     line-height: 1;
+}
+
+/**Description Sections**/
+
+.description {
+    max-width: 502px;
+}
+
+.subheading {
+    font-family: 'Neucha', cursive;
+    font-size: 24px;
+}
+
+.subheading-dark {
+    color: var(--transparent-dark);
+}
+
+.subheading-light {
+    color: var(--transparent-white);
+}
+
+.heading-white {
+    color: var(--white);
+}
+
+.description-dark, .description-light {
+    font-family: 'Neucha', cursive;
+    font-size: 34px;
+    margin-top: 30px;
+    line-height: 41px;
+}
+
+.description-dark {
+    color: var(--dark);
+}
+
+.description-light {
+    color: var(--white);
+}
+
+.illustration {
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    vertical-align: middle;
+}
+
+.heading-h4 {
+    margin: 100px 0 20px;
+    width: 100%;
+}
+
+.heading-h4-brown {
+    background: var(--brown);
+}
+
+.heading-h4-white {
+    background: var(--white);
 }
