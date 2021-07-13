@@ -18,16 +18,11 @@ body {
     margin: 0;
 }
 
-.content-container {
-    width: 1110px;
-}
 
-.header {
-    position: relative;
-    height: 100vh;
-}
 
-/**Text Settings**/
+
+
+/**Text Styles**/
 
 p {
     font-family: 'Open Sans', sans-serif;
@@ -95,7 +90,7 @@ h4 {
     color: var(--transparent-white);
 }
 
-/**Background Settings**/
+/**Background Styles**/
 
 .background-light {
     background-color: var(--light);
@@ -114,7 +109,7 @@ h4 {
 }
 
 .background-before::before {
-    content: url(./assets/img/background.png);
+    content: url(./src/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
@@ -126,7 +121,7 @@ h4 {
     top: 0;
 }
 
-/**Forms And Buttons**/
+/**Forms And Buttons Styles**/
 
 .button-more {
     background: var(--primary);
@@ -164,7 +159,7 @@ h4 {
 }
 
 .button-submit:before {
-    content: url(./assets/img/send.svg);
+    content: url(./src/img/send.svg);
     margin: auto;
     display: inline-block;
 }
@@ -195,7 +190,14 @@ input#email {
     opacity: 0.2;
 }
 
-/** --- **/
+/** Content Styles **/
+
+.main-img {
+    height: 525px;
+    position: absolute;
+    top: 55px;
+    right: -270px;
+}
 
 .section-container {
     position: relative;
@@ -207,54 +209,16 @@ input#email {
     padding: 100px 0;
 }
 
-.footer-container {
-    position: relative;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 0;
+.content-container {
     width: 1110px;
 }
 
-.footer-flex-column {
-    width: 485px;
-    padding: 38px 55px 40px 30px;
-}
-
-.footer-flex-column:first-child {
-    padding: 55px;
-    width: 430px;
-}
-
-.footer-flex-column h3 {
-    padding: 0;
-}
-
-.header-columns {
-    margin-top: 200px;
-}
-
-.main-img {
-    height: 525px;
-    position: absolute;
-    top: 55px;
-    right: -270px;
+.center-content {
+    margin: 0 auto;
 }
 
 .display-flex {
     display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-direction-column {
-    flex-direction: column;
-}
-
-.align-items-center {
-    align-items: center;
 }
 
 .justify-content-center {
@@ -274,15 +238,31 @@ input#email {
     margin-right: 30px;
 }
 
-.primary-text-color {
-    color: var(--primary);
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 
+/**Header Styles**/
 
-.center-content {
-    margin: 0 auto;
+.header {
+    position: relative;
+    height: 100vh;
 }
+
+.header-columns {
+    margin-top: 200px;
+}
+
+/**Video Section Styles**/
 
 .youtube-video {
     margin-bottom: -200px;
@@ -298,14 +278,16 @@ input#email {
     z-index: 999;
 }
 
+/**Main Section Styles**/
+
+.navigation-container {
+    padding-top: 100px;
+}
+
 .navigation-heading {
     font-size: 48px;
     line-height: 120%;
     margin-top: 20px;
-}
-
-.navigation-container {
-    padding-top: 100px;
 }
 
 .main-card {
@@ -354,7 +336,7 @@ input#email {
     line-height: 1;
 }
 
-/**Description Sections**/
+/**Description Sections Styles**/
 
 .description {
     max-width: 502px;
@@ -382,7 +364,34 @@ input#email {
     width: 100%;
 }
 
+/**Footer Styles**/
 
+.footer-container {
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+    width: 1110px;
+}
+
+.footer-flex-column {
+    width: 485px;
+    padding: 38px 55px 40px 30px;
+}
+
+.footer-flex-column:first-child {
+    padding: 55px;
+    width: 430px;
+}
+
+.footer-flex-column h3 {
+    padding: 0;
+}
+
+.header-columns {
+    margin-top: 200px;
+}
 
 .privacy {
     font-family: 'Open Sans', sans-serif;
