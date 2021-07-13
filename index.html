@@ -23,7 +23,7 @@
                     <div class="flex-column">
                         <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
                         <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-                        <button class="button">
+                        <button class="button-more">
                             <a href="#navigation" class="text-white">Подробнее</a>
                         </button>
                     </div>
@@ -48,59 +48,69 @@
                 <div class="display-flex justify-content-space-between flex-wrap">
                     <h3 class="navigation-heading main-card">5 когнитивных искажений<br><span class="text-white">о существовании которых стоит помнить</span></h3>
                     <div class="main-card">
-                        <p class="card-number">
-                            1
-                        </p>
-                        <h3>
-                            Эффект ИКЕА
-                        </h3>
-                        <p>
-                            Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.
-                        </p>
+                        <a href="#ikea-effect">
+                            <p class="card-number">
+                                1
+                            </p>
+                            <h3>
+                                Эффект ИКЕА
+                            </h3>
+                            <p>
+                                Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.
+                            </p>
+                        </a>
+                    </div>                    
+                    <div class="main-card">
+                        <a href="#premature-optimization">
+                            <p class="card-number">
+                                2
+                            </p>
+                            <h3>
+                                Преждевременная оптимизация
+                            </h3>
+                            <p>
+                                Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.
+                            </p>
+                        </a>
                     </div>
                     <div class="main-card">
-                        <p class="card-number">
-                            2
-                        </p>
-                        <h3>
-                            Преждевременная оптимизация
-                        </h3>
-                        <p>
-                            Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.
-                        </p>
+                        <a href="#distortion-of-novelty">
+                            <p class="card-number">
+                                3
+                            </p>
+                            <h3>
+                                Искажение новизны
+                            </h3>
+                            <p>
+                                Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.
+                            </p>
+                        </a>
                     </div>
                     <div class="main-card">
-                        <p class="card-number">
-                            3
-                        </p>
-                        <h3>
-                            Искажение новизны
-                        </h3>
-                        <p>
-                            Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.
-                        </p>
+                        <a href="#hyperbolic-depreciation">
+                            <p class="card-number">
+                                4
+                            </p>
+                            <h3>
+                                Гиперболическое обесценивание
+                            </h3>
+                            <p>
+                                Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.
+                            </p>
+                        </a>
                     </div>
                     <div class="main-card">
-                        <p class="card-number">
-                            4
-                        </p>
-                        <h3>
-                            Гиперболическое обесценивание
-                        </h3>
-                        <p>
-                            Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.
-                        </p>
-                    </div>
-                    <div class="main-card">
-                        <p class="card-number">
-                            5
-                        </p>
-                        <h3>
-                            Ошибка планирования
-                        </h3>
-                        <p>
-                            Неправильно рассчитывать время необходимое для завершения задачи.
-                        </p>
+                        <a href="#errors-in-planning">
+                            <p class="card-number">
+                                5
+                            </p>
+                            <h3>
+                                Ошибка планирования
+                            </h3>
+                            <p>
+                                Неправильно рассчитывать время необходимое для завершения задачи.
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -165,7 +175,7 @@
             <div class="content-container">
                 <div class="display-flex justify-content-space-between">
                     <div class="img-container">
-                        <img class="illustration" src="./assets/img/3.png" alt="ikea-effect">
+                        <img class="illustration" src="./assets/img/3.png" alt="distortion-of-novelty">
                     </div>
                     <div class="description">
                         <p class="description-subheading text-transparent-dark">Когнитивные искажения</p>
@@ -244,7 +254,28 @@
         </div>
     </section>
     <footer>
-
+        <div class="footer-container background-white">
+            <div class="background-primary-dark display-flex jystify-content-center">
+                <div class="footer-flex-column">
+                    <h3 class="text-white">Хотите узнать больше?<br>Подпишитесь на обновления</h3>
+                </div>
+                <div class="footer-flex-column">
+                    <div class="form">
+                        <form action="#">
+                            <label for="email" class="text-white">Электронная почта</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Ваша электронная почта"><button class="button-submit"></button>
+                            <p class="privacy">Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <div class="credits">
+                <p>© 2020 Сергей Стойко</p>
+                <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+                <p><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
